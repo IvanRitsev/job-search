@@ -1,0 +1,68 @@
+@use "@/app/styles/variables.scss" as *;
+@use "@/app/styles/mixins.scss" as *;
+
+.radioWrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.title {
+  font-size: 14px;
+  color: $gray;
+  font-weight: 600;
+  margin-bottom: 8px;
+
+  span {
+    color: $red;
+  }
+}
+
+.radio {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  user-select: none;
+  color: $gray;
+  font-weight: 300;
+  font-size: 16px;
+
+  input {
+    display: none;
+  }
+
+  .customRadio {
+    width: 20px;
+    height: 20px;
+    border: 1px solid $blue;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 8px;
+    transition: $transition;
+
+    &:hover {
+      box-shadow: 0px 0px 3px 1px rgba(53, 165, 0, 0.7);
+    }
+
+    &::after {
+      content: "";
+      width: 20px;
+      height: 20px;
+      background: $blue url("/src/shared/assets/icons/checkmark.svg") no-repeat
+        center;
+      border-radius: 50%;
+      display: none;
+    }
+  }
+
+  input:checked + .customRadio::after {
+    display: block;
+  }
+}
+
+.error {
+  margin-top: 18px;
+  color: $red;
+  font-size: 12px;
+}

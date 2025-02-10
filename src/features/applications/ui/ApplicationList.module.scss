@@ -1,0 +1,98 @@
+@use "@/app/styles/variables.scss" as *;
+@use "@/app/styles/mixins.scss" as *;
+
+.listWrapper {
+  width: 100%;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.listItem {
+  background-color: $white;
+
+  border-radius: 16px;
+  padding: 19.5px 28px 16px;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.topBlock {
+  margin-bottom: 31.5px;
+}
+
+.date {
+  opacity: 0.6;
+  color: $gray;
+  font-weight: 400;
+  font-size: 14px;
+}
+
+.addInfo {
+  gap: 20px;
+}
+
+.blue {
+  color: $blue;
+  font-weight: 700;
+}
+
+.pay {
+  color: $gray;
+  .blue {
+    font-size: 20px;
+  }
+}
+
+.experience {
+  color: $gray;
+  .blue {
+    font-size: 16px;
+  }
+}
+
+.title {
+  font-weight: 700;
+  font-size: 25px;
+  color: $gray;
+  margin-bottom: 12px;
+}
+
+.address {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  p {
+    color: $gray;
+    font-size: 16px;
+    font-weight: 400;
+    opacity: 0.8;
+  }
+}
+
+.metro {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  p {
+    opacity: 0.8;
+    color: $gray;
+    font-size: 16px;
+  }
+}
+
+.editButton {
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+.hidden {
+  visibility: hidden;
+}

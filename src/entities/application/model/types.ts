@@ -1,0 +1,23 @@
+export type Application = {
+  id?: string | number;
+  vacancy_name: string;
+  post_name?: string;
+  department: string;
+  opening_date: string;
+  closing_date: string;
+  sex: "F" | "M" | string;
+  education: "Высшее" | "Среднее";
+  pay: "На руки" | "До вычета налогов";
+  min_pay?: number;
+  max_pay?: number;
+  region: string;
+  address: string;
+  metro_station?: string;
+  work_experience: string;
+  work_schedule: "Полный день" | "Сменный 5/2" | "Сменный 2/2";
+  type_of_employment: "Полная занятость" | "Частичная занятость" | "Стажировка";
+  responsibilities?: string;
+  wishes?: string;
+  advantages?: string;
+  our_offers?: string;
+};

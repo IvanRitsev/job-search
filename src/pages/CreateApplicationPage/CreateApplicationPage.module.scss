@@ -1,0 +1,15 @@
+@use "@/app/styles/variables.scss" as *;
+@use "@/app/styles/mixins.scss" as *;
+
+.title {
+  @include title;
+  margin-bottom: 56px;
+
+  span {
+    text-decoration: underline;
+  }
+}
+
+.wrapper {
+  padding-bottom: 50px;
+}

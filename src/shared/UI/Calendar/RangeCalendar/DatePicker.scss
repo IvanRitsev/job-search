@@ -1,0 +1,25 @@
+@use "@/app/styles/variables.scss" as *;
+
+.react-calendar {
+  position: absolute;
+  top: 110%;
+  left: 0;
+  max-width: none;
+  z-index: 100;
+}
+.react-calendar__tile {
+  &:enabled:hover,
+  &:enabled:focus {
+    background-color: $blue;
+    color: $gray;
+  }
+
+  &--active {
+    color: $white;
+    background-color: $blue;
+
+    &:enabled:hover {
+      color: $white;
+    }
+  }
+}

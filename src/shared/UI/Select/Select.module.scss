@@ -1,0 +1,108 @@
+@use "@/app/styles/variables.scss" as *;
+@use "@/app/styles/mixins.scss" as *;
+
+.select {
+  display: flex;
+  flex-direction: column;
+}
+
+.title {
+  font-size: 14px;
+  color: $gray;
+  font-weight: 600;
+  margin-bottom: 8px;
+
+  span {
+    color: $red;
+  }
+}
+
+.dropdown {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  font-size: 16px;
+  font-weight: 400;
+  color: $gray;
+  cursor: pointer;
+
+  &__item {
+    display: flex;
+    justify-content: space-between;
+    background-color: $white;
+    padding: 12.5px 20px;
+    border-radius: 16px;
+
+    &:hover {
+      box-shadow: 0px 0px 3px 1px rgba(53, 165, 0, 0.7);
+    }
+
+    &_shown {
+      border: $blue 1px solid;
+    }
+
+    &_hidden {
+      border: $border-white 1px solid;
+    }
+  }
+
+  &__options {
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 48px;
+    background-color: $white;
+    border: $gray;
+    border-radius: 0 0 16px 16px;
+    display: flex;
+    flex-direction: column;
+    z-index: 2;
+  }
+
+  &__option {
+    padding: 0.9722vw 1.1111vw;
+    border-top: $gray;
+    color: $gray;
+    font-weight: 300;
+
+    &_active {
+      background-color: $white;
+
+      &:last-child {
+        border-radius: 0 0 16px 16px;
+      }
+    }
+
+    &:first-child {
+      border-top: none;
+    }
+
+    &:hover {
+      background-color: $selected;
+
+      &:last-child {
+        border-radius: 0 0 16px 16px;
+      }
+    }
+  }
+}
+
+.iconUp {
+  transform: rotate(180deg);
+}
+
+.placeholder {
+  color: $placeholder-gray;
+}
+
+.error {
+  margin-top: 4px;
+  font-weight: 400;
+  font-size: 12px;
+  color: $red;
+}
+
+.hint {
+  border: 1px solid $red;
+}

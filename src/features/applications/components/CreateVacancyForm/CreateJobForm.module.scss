@@ -1,0 +1,109 @@
+@use "@/app/styles/variables.scss" as *;
+@use "@/app/styles/mixins.scss" as *;
+
+.row {
+  display: flex;
+  gap: 40px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.formSection {
+  padding: 60px;
+  background-color: $white;
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.mainInput {
+  max-width: 275px;
+}
+
+.education {
+  width: 250px;
+}
+
+.sex {
+  width: 100px;
+
+  & div {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+}
+
+.pay {
+  max-width: 286px;
+  & div {
+    display: flex;
+    gap: 20px;
+  }
+}
+
+.typeOfEmployment {
+  & div {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+
+.textArea {
+  textarea {
+    max-width: 1180px;
+    min-height: 100px;
+  }
+}
+
+.buttonsWrapper {
+  display: flex;
+  gap: 20px;
+}
+
+.button {
+  padding: 16px 0;
+  width: 250px;
+}
+
+.payFork {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+
+  div {
+    display: flex;
+    align-items: center;
+  }
+
+  span {
+    font-size: 16px;
+    color: $gray;
+    margin-right: 7px;
+  }
+}
+
+.payInput {
+  max-width: 100px;
+}
+
+.calendarInput {
+  width: 275px;
+}
+
+.error {
+  font-weight: 400;
+  font-size: 12px;
+  color: $red;
+}
+
+.calendar {
+  display: flex;
+  flex-direction: column;
+}

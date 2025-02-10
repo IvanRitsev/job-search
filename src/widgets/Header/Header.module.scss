@@ -1,0 +1,46 @@
+@use "@/app/styles/variables.scss" as *;
+
+.header {
+  background-color: $blue;
+}
+
+.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 71px;
+}
+
+.logo {
+  width: 31px;
+  height: 31px;
+  flex-shrink: 0;
+  border-radius: 999px;
+  background-color: $white;
+}
+
+.navBar {
+  display: flex;
+  align-items: center;
+  height: 100%;
+
+  .navItem {
+    color: $white;
+    font-size: 18px;
+    font-weight: 400;
+    height: inherit;
+    padding-inline: 20px;
+    align-content: center;
+
+    &:hover {
+      text-decoration: underline;
+      text-decoration-color: $yellow;
+      text-underline-offset: 9px;
+      text-decoration-thickness: 6px;
+    }
+  }
+}
+
+.active {
+  background-color: $blue-hover;
+}

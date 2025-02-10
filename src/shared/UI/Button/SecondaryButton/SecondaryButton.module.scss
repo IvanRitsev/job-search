@@ -1,0 +1,17 @@
+@use "@/app/styles/variables.scss" as *;
+
+.button {
+  background: transparent;
+  color: $blue;
+  border: 2px solid $blue;
+  border-radius: 26px;
+  font-weight: 800;
+  font-size: 15px;
+  transition: $transition;
+  cursor: pointer;
+
+  &:hover {
+    color: $blue-hover;
+    border: 2px solid $blue-hover;
+  }
+}

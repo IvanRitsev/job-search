@@ -1,0 +1,61 @@
+@use "@/app/styles/variables.scss" as *;
+
+.inputAreaBox {
+  display: flex;
+  flex-direction: column;
+}
+
+.title {
+  font-size: 14px;
+  color: $gray;
+  font-weight: 600;
+  margin-bottom: 8px;
+
+  span {
+    color: $red;
+  }
+}
+
+.textarea {
+  background: $white;
+  color: $gray;
+  font-weight: 300;
+  font-size: 16;
+  border: 1px solid $border-white;
+  border-radius: 16px;
+  margin-bottom: 4px;
+  padding: 12px 20px;
+  transition: $transition;
+  width: 100%;
+  resize: none;
+
+  &::placeholder {
+    font-weight: 300;
+    color: $placeholder-gray;
+  }
+
+  &:hover {
+    box-shadow: 0px 0px 3px 1px rgba(53, 165, 0, 0.7);
+  }
+
+  &:focus-visible,
+  &:focus,
+  &:focus-within {
+    outline: none;
+    border: 1px solid $blue;
+  }
+
+  &:focus-visible::placeholder {
+    visibility: hidden;
+  }
+}
+
+.hint {
+  border: 1px solid $red;
+}
+
+.errorTitle {
+  font-weight: 400;
+  font-size: 12px;
+  color: $red;
+}

@@ -1,0 +1,15 @@
+@use "@/app/styles/variables.scss" as *;
+@use "@/app/styles/mixins.scss" as *;
+
+.saveButton {
+  padding: 10px;
+}
+
+.input {
+  width: 250px;
+}
+
+.title {
+  @include title;
+  margin-bottom: 56px;
+}
