@@ -15,11 +15,12 @@ import InputArea from "@/shared/UI/Input/InputArea/InputArea";
 import PrimaryButton from "@/shared/UI/Button/PrimaryButton/PrimaryButton";
 import SecondaryButton from "@/shared/UI/Button/SecondaryButton/SecondaryButton";
 import { Application } from "@/entities/application/model/types";
-import RangeCalendar, {
+import RangeCalendar from "@/shared/UI/Calendar/RangeCalendar/RangeCalendar";
+import { useMemo, useState } from "react";
+import {
   DateItem,
   DateValue,
-} from "@/shared/UI/Calendar/RangeCalendar/RangeCalendar";
-import { useMemo, useState } from "react";
+} from "@/shared/UI/Calendar/RangeCalendar/model/types";
 
 const formatRangeDate: (startDate?: Date, endDate?: Date) => string = (
   startDate,

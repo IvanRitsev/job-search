@@ -7,11 +7,7 @@ import { Application } from "@/entities/application/model/types";
 import { DateRange } from "@/features/applications/components/CreateVacancyForm/CreateJobForm";
 import "react-calendar/dist/Calendar.css";
 import "./DatePicker.scss";
-
-// Типы для react-calendar
-export type DateItem = Date | null;
-
-export type DateValue = DateItem | [DateItem, DateItem];
+import { DateValue } from "./model/types";
 
 interface RangeCalendarProps {
   value: string | undefined;
